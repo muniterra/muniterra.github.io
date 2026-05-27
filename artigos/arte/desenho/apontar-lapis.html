@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Arte de Apontar Lápis | muniterra</title>
+    <link rel="icon" type="image/png" href="../../../favicon.png">
     <style>
         * {
             box-sizing: border-box;
@@ -129,26 +130,19 @@
             text-align: justify;
         }
 
-        .img-placeholder {
-            background: #f1e9fa;
-            border: 1px dashed #bc61f5;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6d28d9;
-            font-family: monospace;
-            font-size: 0.85rem;
-            margin: 25px 0;
+        /* Container da Imagem Hero */
+        .hero-image-container {
+            margin: 30px 0;
             width: 100%;
-            height: 350px; /* Altura padrão para a hero image */
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
         }
 
-        .img-placeholder img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .hero-image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
 
         /* Índice / Table of Contents */
@@ -215,51 +209,6 @@
             gap: 20px;
         }
 
-        .side-card {
-            background: #ffffff;
-            border: 1px solid #e9e3f3;
-            border-radius: 6px;
-            overflow: hidden;
-            text-decoration: none;
-            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
-            display: block;
-        }
-
-        .side-card:hover {
-            transform: translateY(-3px);
-            border-color: #6d28d9;
-            box-shadow: 0 10px 20px rgba(109, 40, 217, 0.05);
-        }
-
-        .side-card-img {
-            height: 140px;
-            background: #f1e9fa;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: monospace;
-            font-size: 0.75rem;
-            color: #837299;
-        }
-
-        .side-card-content {
-            padding: 15px;
-        }
-
-        .side-card h4 {
-            font-size: 0.95rem;
-            color: #000;
-            line-height: 1.4;
-            font-weight: 700;
-        }
-
-        .side-card p {
-            font-size: 0.85rem;
-            color: #837299;
-            margin-top: 5px;
-            font-style: italic;
-        }
-
         /* Responsividade */
         @media (max-width: 900px) {
             .article-layout { grid-template-columns: 1fr; }
@@ -273,7 +222,7 @@
 
     <div class="container">
         <header>
-            <h1>muniterra</h1>
+            <h1><a href="../../../index.html">muniterra</a></h1>
             <nav>
                 <a href="../../../index.html">// sobre mim</a>
             </nav>
@@ -287,8 +236,8 @@
                 
                 <h1>A Arte de Apontar Lápis (Estilos & Técnicas)</h1>
 
-                <div class="img-placeholder">
-                    [Imagem Original: Boneca a afiar lápis no olho]
+                <div class="hero-image-container">
+                    <img src="img/living-dead-dolls-sadie-pencil-sharpener.jpg" alt="Boneca apontando lápis no olho">
                 </div>
 
                 <div class="toc-box">
@@ -302,14 +251,14 @@
                                 <li><a href="#ponta-bala">Ponta em bala</a></li>
                             </ul>
                         </li>
-                        <li><a href="#metodos-de-afiar">Métodos de Afiar</a>
+                        <li><a href="#metodos-de-afiar">Métodos de apontar lápis</a>
                             <ul>
                                 <li><a href="#aparalapis-tradicionais">Apontadores tradicionais</a></li>
-                                <li><a href="#afiar-com-faca">Afiar com estilete</a></li>
+                                <li><a href="#afiar-com-faca">Apontar com estilete</a></li>
                                 <li><a href="#lixa">Lixa</a></li>
                                 <li><a href="#lapis-envoltos-em-papel">Lápis envoltos em papel</a></li>
                                 <li><a href="#aparalapis-mecanicos">Apontadores mecânicos</a></li>
-                                <li><a href="#aparalapis-novidade">Apontadores como novidade</a></li>
+                                <li><a href="#aparalapis-novidade">Apontadores decorativos</a></li>
                             </ul>
                         </li>
                         <li><a href="#lapis-curtos">Lápis curtos</a></li>
@@ -322,24 +271,449 @@
                 
                 <p>O segredo é usar o estilo certo na hora certa.</p>
 
-                <h2 id="estilos-de-pontas">Estilos de Ponta para Apontar Lápis</h2>
+                <h2 id="estilos-de-pontas">Estilos de ponta</h2>
                 
                 <p>Existem quatro pontas principais para escolher; a que você vai escolher vai depender do tipo de lápis que você usa e do estilo do seu desenho.</p>
 
-                </main>
+                <div style="background: #ffffff; border: 1px solid #e9e3f3; border-radius: 8px; padding: 30px; margin-top: 40px;">
+                    
+                    <h3 id="ponta-padrao" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 25px; color: #000000;">Ponta padrão</h3>
+
+                    <div style="margin-bottom: 25px; text-align: center;">
+                        <img src="img/lapis-padrao.jpg" alt="Lápis com a ponta padrão cônica" style="max-width: 100%; height: auto; border-radius: 4px;">
+                    </div>
+
+                    <p style="margin-bottom: 20px;">
+                        Todo mundo conhece esta ponta; o seu formato cônico característico é o mais comum e o mais versátil de todos os estilos de apontar.
+                    </p>
+
+                    <p style="margin-bottom: 15px;">É uma boa opção para tudo por vários motivos:</p>
+
+                    <ul style="list-style: none; margin-bottom: 25px;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #2e7d32; font-weight: bold;">✓</span> 
+                            <span>Funciona para a maioria dos tipos de lápis.</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #2e7d32; font-weight: bold;">✓</span> 
+                            <span>Apontadores padrão são fáceis de encontrar em quase qualquer lugar.</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #2e7d32; font-weight: bold;">✓</span> 
+                            <span>Muitas vezes, os lápis já vêm apontados com a ponta padrão.</span>
+                        </li>
+                    </ul>
+
+                    <p style="margin-bottom: 25px;">
+                        Se você não tem um estilete, provavelmente não tem escolha, esta é a ponta certa para você.
+                    </p>
+
+                    <p style="margin-bottom: 15px;">No entanto, existem algumas desvantagens neste estilo:</p>
+
+                    <ul style="list-style: none; margin-bottom: 30px;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #d32f2f; font-weight: bold;">✗</span> 
+                            <span>A ponta padrão pode ficar cega rapidamente, especialmente se você estiver usando lápis mais macios, como carvão.</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #d32f2f; font-weight: bold;">✗</span> 
+                            <span>Em desenhos maiores, você vai se pegar apontando o lápis constantemente, o que não é o ideal se estiver desenhando poses curtas de modelo vivo.</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #d32f2f; font-weight: bold;">✗</span> 
+                            <span>Lápis de qualidade inferior frequentemente contêm uma mina (núcleo ou miolo) de grafite com um diâmetro menor; se esta mina estiver ligeiramente descentralizado, você verá que a madeira fica tão próxima da ponta de um dos lados que o torna quase inutilizável. Isso pode ser muito frustrante.</span>
+                        </li>
+                    </ul>
+
+                    <div style="margin-bottom: 15px; text-align: center;">
+                        <img src="img/esboco-padrao.jpg" alt="Esboço de modelo vivo usando ponta padrão" style="max-width: 100%; height: auto; border: 1px solid #e9e3f3; border-radius: 4px;">
+                    </div>
+
+                    <p style="font-size: 0.9rem; color: #837299; text-align: center; font-style: italic; margin-bottom: 0;">
+                        Este é um dos meus desenhos de modelo vivo que desenhei com um lápis de ponta cônica padrão.
+                    </p>
+                </div>
+
+<div style="background: #ffffff; border: 1px solid #e9e3f3; border-radius: 8px; padding: 30px; margin-top: 40px;">
+                    
+                    <h3 id="ponta-cinzel" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 25px; color: #000000;">Ponta em cinzel</h3>
+
+                    <div style="margin-bottom: 25px; text-align: center;">
+                        <img src="img/lapis-cinzel.jpg" alt="Lápis com a ponta em formato de cinzel" style="max-width: 100%; height: auto; border-radius: 4px;">
+                    </div>
+
+                    <p style="margin-bottom: 20px;">
+                        Este é um estilo raramente visto onde a ponta do lápis é cortada com um estilete em forma de cinzel (chanfrada).
+                    </p>
+
+                    <p style="margin-bottom: 15px;">O principal benefício do cinzel é a sua capacidade de desenhar múltiplos tipos de marcas no papel:</p>
+
+                    <ul style="list-style: none; margin-bottom: 25px;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #2e7d32; font-weight: bold;">✓</span> 
+                            <span><strong>Linhas largas e suaves</strong> a partir das faces planas. Estas linhas suaves são ótimas para a construção inicial e bruta (esboço) de um desenho; basta virar o lápis de lado para obter precisão extra quando precisar.</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #2e7d32; font-weight: bold;">✓</span> 
+                            <span><strong>Linhas finas e escuras</strong> a partir das arestas afiadas.</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #2e7d32; font-weight: bold;">✓</span> 
+                            <span><strong>Linhas em estilo caligrafia</strong> quando a borda reta é usada em ângulo.</span>
+                        </li>
+                    </ul>
+
+                    <p style="margin-bottom: 25px;">
+                        Outra característica interessante da ponta em cinzel é a sua propriedade de autoapontamento. Ao usar o cinzel pelas faces planas, isso ajuda a manter a aresta afiada. Isso significa que você pode passar mais tempo desenhando e menos tempo apontando — ótimo para lápis mais macios!
+                    </p>
+
+                    <p style="margin-bottom: 15px;">Existem apenas alguns pequenos problemas:</p>
+
+                    <ul style="list-style: none; margin-bottom: 30px;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #d32f2f; font-weight: bold;">✗</span> 
+                            <span>O formato em cinzel pode ser difícil de dominar, porque ao desenhar com a face plana é fácil rolar acidentalmente o pulso e desgastar os cantos do formato.</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #d32f2f; font-weight: bold;">✗</span> 
+                            <span>Também pode dar um pouco de trabalho esculpir o cinzel para começar.</span>
+                        </li>
+                    </ul>
+
+                    <p style="margin-bottom: 25px;">
+                        Se você conseguir superar esses pequenos incômodos, então a ponta em cinzel pode ser para você.
+                    </p>
+
+                    <div style="margin-bottom: 15px; text-align: center;">
+                        <img src="img/esboco-cinzel.jpg" alt="Esboço de modelo vivo usando ponta em cinzel" style="max-width: 100%; height: auto; border: 1px solid #e9e3f3; border-radius: 4px;">
+                    </div>
+
+                    <p style="font-size: 0.9rem; color: #837299; text-align: center; font-style: italic; margin-bottom: 0;">
+                        Desenhei este modelo vivo com um lápis de giz vermelho que cortei em ponta de cinzel.
+                    </p>
+                </div>
+
+<div style="background: #ffffff; border: 1px solid #e9e3f3; border-radius: 8px; padding: 30px; margin-top: 40px;">
+                    
+                    <h3 id="ponta-agulha" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 25px; color: #000000;">Ponta em agulha</h3>
+
+                    <div style="margin-bottom: 25px; text-align: center;">
+                        <img src="img/lapis-agulha.jpg" alt="Lápis com a ponta em formato de agulha longa" style="max-width: 100%; height: auto; border-radius: 4px;">
+                    </div>
+
+                    <p style="margin-bottom: 20px;">
+                        Este é um modelo especializado que é esculpido com uma lâmina até formar uma ponta côncava bem afiada. A ideia é que uma ponta tão fina consiga se desgastar bastante antes de ficar cega demais para o uso.
+                    </p>
+
+                    <p style="margin-bottom: 15px;">Aqui está o porquê de eu gostar desse estilo de ponta:</p>
+
+                    <ul style="list-style: none; margin-bottom: 25px;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #2e7d32; font-weight: bold;">✓</span> 
+                            <span><strong>Controle preciso sobre as linhas e detalhes extrafinos.</strong> Ótimo para perfeccionistas, como eu!</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #2e7d32; font-weight: bold;">✓</span> 
+                            <span><strong>Menos tempo apontando.</strong> A ponta longa vai durar bastante tempo se você for cuidadoso com ela.</span>
+                        </li>
+                    </ul>
+
+                    <p style="margin-bottom: 15px;">Mas ela não deixa de ter suas desvantagens:</p>
+
+                    <ul style="list-style: none; margin-bottom: 30px;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #d32f2f; font-weight: bold;">✗</span> 
+                            <span><strong>A ponta fina é propensa a quebrar</strong>, por isso só é adequada para lápis mais duros.</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #d32f2f; font-weight: bold;">✗</span> 
+                            <span><strong>Ela só consegue fazer um tipo de traço</strong>, uma linha fina, então não há muita flexibilidade aqui.</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #d32f2f; font-weight: bold;">✗</span> 
+                            <span><strong>Preencher grandes seções de tom sólido pode consumir muito tempo</strong>, então você fica limitado a desenhos menores, a menos que queira enlouquecer!</span>
+                        </li>
+                    </ul>
+
+                    <div style="margin-bottom: 15px; text-align: center;">
+                        <img src="img/esboco-agulha.jpg" alt="Esboço de modelo vivo usando ponta em agulha" style="max-width: 100%; height: auto; border: 1px solid #e9e3f3; border-radius: 4px;">
+                    </div>
+
+                    <p style="font-size: 0.9rem; color: #837299; text-align: center; font-style: italic; margin-bottom: 0;">
+                        Neste desenho de modelo vivo, você pode ver o detalhe fino que se consegue obter com um lápis apontado em forma de agulha. Infelizmente, você também pode ver algumas linhas verticais; elas foram causadas pelo meu scanner antigo :(
+                    </p>
+                </div>
+
+<div style="background: #ffffff; border: 1px solid #e9e3f3; border-radius: 8px; padding: 30px; margin-top: 40px;">
+                    
+                    <h3 id="ponta-bala" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 25px; color: #000000;">Ponta em bala</h3>
+
+                    <div style="margin-bottom: 25px; text-align: center;">
+                        <img src="img/lapis-bala.jpg" alt="Lápis com a ponta em formato de bala" style="max-width: 100%; height: auto; border-radius: 4px;">
+                    </div>
+
+                    <p style="margin-bottom: 20px;">
+                        Esta é a minha maneira favorita de apontar lápis e um método que eu mesmo desenvolvi.
+                    </p>
+
+                    <p style="margin-bottom: 20px;">
+                        Neste estilo, a madeira é removida do último centímetro do lápis e depois a ponta do grafite é apontada no formato de uma bala.
+                    </p>
+
+                    <p style="margin-bottom: 15px;">Dois tipos de traços podem ser feitos com esse design:</p>
+
+                    <ul style="list-style: none; margin-bottom: 25px; padding-left: 10px;">
+                        <li style="margin-bottom: 8px;">• <strong>Uma linha suave</strong> a partir da lateral da bala.</li>
+                        <li style="margin-bottom: 8px;">• <strong>Uma linha nítida (fina)</strong> a partir da ponta.</li>
+                    </ul>
+
+                    <p style="margin-bottom: 15px;">Além disso, ela tem algumas boas propriedades:</p>
+
+                    <ul style="list-style: none; margin-bottom: 25px;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #2e7d32; font-weight: bold;">✓</span> 
+                            <span><strong>Tem uma propriedade de autoapontamento</strong> como a ponta em cinzel.</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #2e7d32; font-weight: bold;">✓</span> 
+                            <span><strong>Funciona para lápis duros e macios</strong>, por isso é muito versátil.</span>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #2e7d32; font-weight: bold;">✓</span> 
+                            <span><strong>Dura muito tempo</strong>, então você não precisará apontar constantemente.</span>
+                        </li>
+                    </ul>
+
+                    <p style="margin-bottom: 15px;">Não existem muitas desvantagens neste design:</p>
+
+                    <ul style="list-style: none; margin-bottom: 30px;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px;">
+                            <span style="color: #d32f2f; font-weight: bold;">✗</span> 
+                            <span><strong>Pode levar um minuto ou dois para esculpir o formato</strong>, mas não é tão difícil quanto a ponta em cinzel.</span>
+                        </li>
+                    </ul>
+
+                    <p style="margin-bottom: 25px;">
+                        Se você ainda não tentou este método de apontar antes, eu recomendo fortemente que faça uma tentativa.
+                    </p>
+
+                    <div style="margin-bottom: 15px; text-align: center;">
+                        <img src="img/esboco-bala.jpg" alt="Esboço de modelo vivo usando ponta em bala" style="max-width: 100%; height: auto; border: 1px solid #e9e3f3; border-radius: 4px;">
+                    </div>
+
+                    <p style="font-size: 0.9rem; color: #837299; text-align: center; font-style: italic; margin-bottom: 0;">
+                        Adoro usar a ponta em bala nos meus lápis de carvão porque ela me dá a maior quantidade de controle e flexibilidade enquanto estou desenhando modelos vivos.
+                    </p>
+                </div>
+
+<h2 id="metodos-de-afiar">Métodos de apontar lápis</h2>
+                <p style="margin-bottom: 30px;">Aqui estão os principais métodos de apontar que eu utilizo:</p>
+
+                <div style="background: #ffffff; border: 1px solid #e9e3f3; border-radius: 8px; padding: 30px; margin-bottom: 40px;">
+                    <h3 id="aparalapis-tradicionais" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 25px; color: #000000;">Apontadores tradicionais</h3>
+
+                    <div style="margin-bottom: 25px; text-align: center;">
+                        <img src="img/apontador-tradicional.jpg" alt="Apontador tradicional de metal" style="max-width: 150px; height: auto; border-radius: 4px;">
+                    </div>
+
+                    <p style="margin-bottom: 20px;">
+                        É sempre útil ter um desses apontadores tradicionais no seu estojo como um reserva confiável.
+                    </p>
+
+                    <p style="margin-bottom: 0;">
+                        Se você gosta de experimentar vários materiais diferentes, é uma boa ideia garantir aqueles apontadores duplos que possuem dois tamanhos distintos; eles podem ser de metal ou plástico. Existem muitos lápis excelentes por aí que são um pouco maiores que o normal, então, se você esquecer o seu estilete, ainda poderá apontá-los com um desses caras.
+                    </p>
+                </div>
+
+                <div style="background: #ffffff; border: 1px solid #e9e3f3; border-radius: 8px; padding: 30px; margin-top: 40px;">
+                    <h3 id="afiar-com-faca" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 25px; color: #000000;">Apontar com estilete</h3>
+
+                    <div style="margin-bottom: 25px; text-align: center;">
+                        <img src="img/estilete.jpg" alt="Estilete usado para apontar lápis" style="max-width: 200px; height: auto; border-radius: 4px;">
+                    </div>
+
+                    <p style="margin-bottom: 20px;">
+                        O estilete é o método mais versátil para apontar um lápis porque você pode usá-lo para esculpir qualquer estilo de ponta. Pode exigir um pouco de prática, mas é uma habilidade útil para um artista dominar.
+                    </p>
+
+                    <p style="margin-bottom: 20px;">
+                        Para apontar um lápis com estilete, segure-o em uma mão sobre uma lixeira com a ponta virada para longe de você. Com a outra mão, corte suavemente em uma direção para fora, removendo finas lascas de madeira e grafite. Gire o lápis entre os cortes para moldar uma ponta uniforme. A maioria dos estiletes afiados pode ser usada.
+                    </p>
+
+                    <p style="margin-bottom: 0;">
+                        Se a mina ou o grafite continuar quebrando, tente cortar fatias ainda mais finas por vez.
+                    </p>
+                </div>
+
+<div style="background: #ffffff; border: 1px solid #e9e3f3; border-radius: 8px; padding: 30px; margin-top: 40px;">
+                    <h3 id="lixa" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 25px; color: #000000;">Usando lixa</h3>
+
+                    <div style="margin-bottom: 25px; text-align: center;">
+                        <img src="img/lixa.jpg" alt="Pedaço de lixa preso a uma prancheta" style="max-width: 150px; height: auto; border-radius: 4px;">
+                    </div>
+
+                    <p style="margin-bottom: 20px;">
+                        Este é um truque bem legal que eu uso regularmente.
+                    </p>
+
+                    <p style="margin-bottom: 0;">
+                        Tente prender um pedaço pequeno de lixa na sua prancheta de desenho e, se o seu lápis começar a ficar um pouco cego, basta passá-lo sobre o papel algumas vezes para trazer a ponta de volta. Isso é especialmente útil durante desenhos rápidos de modelo vivo, quando não há tempo para pegar o seu apontador.
+                    </p>
+                </div>
+
+                <div style="background: #ffffff; border: 1px solid #e9e3f3; border-radius: 8px; padding: 30px; margin-top: 40px;">
+                    <h3 id="lapis-envoltos-em-papel" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 25px; color: #000000;">Lápis envoltos em papel</h3>
+
+                    <div style="margin-bottom: 25px; text-align: center;">
+                        <img src="img/lapis-papel.jpg" alt="Lápis dermatográfico envolto em papel sendo descascado" style="max-width: 150px; height: auto; border-radius: 4px;">
+                    </div>
+
+                    <p style="margin-bottom: 20px;">
+                        Alguns lápis vêm com seu próprio método de apontar embutido!
+                    </p>
+
+                    <p style="margin-bottom: 20px;">
+                        Com os lápis envoltos em papel (dermatográficos), basta puxar a cordinha para cortar um novo segmento de papel e depois desenrolá-lo. Isso é ótimo para materiais que fazem sujeira, como o carvão.
+                    </p>
+
+                    <p style="margin-bottom: 0;">
+                        O melhor desse método é que você fica com o lápis apontado no estilo ponta em bala, muito bom!
+                    </p>
+                </div>
+
+                <div style="background: #ffffff; border: 1px solid #e9e3f3; border-radius: 8px; padding: 30px; margin-top: 40px;">
+                    <h3 id="aparalapis-mecanicos" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 25px; color: #000000;">Apontadores mecânicos</h3>
+
+                    <div style="margin-bottom: 25px; text-align: center;">
+                        <img src="img/apontador-mecanico.jpg" alt="Apontador mecânico de manivela" style="max-width: 120px; height: auto; border-radius: 4px;">
+                    </div>
+
+                    <p style="margin-bottom: 20px;">
+                        Os apontadores mecânicos (de manivela) funcionam brilhantemente, mas só conseguem cortar a ponta cônica padrão.
+                    </p>
+
+                    <p style="margin-bottom: 0;">
+                        Para usar um apontador mecânico, basta puxar a parte frontal para fora, travar o seu lápis no lugar e depois girar a manivela para obter uma ponta perfeita sem esforço. Eles são tão divertidos de usar que talvez você precise comprar lápis com mais frequência... e nem me faça falar sobre as variações elétricas! ;)
+                    </p>
+                </div>
+
+<div style="background: #ffffff; border: 1px solid #e9e3f3; border-radius: 8px; padding: 30px; margin-top: 40px;">
+                    <h3 id="aparalapis-novidade" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 25px; color: #000000;">Apontadores decorativos</h3>
+
+                    <div style="margin-bottom: 15px; text-align: center;">
+                        <img src="img/living-dead-dolls-sadie-pencil-sharpener2.jpg" alt="Apontador Sadie da Living Dead Dolls" style="max-width: 100%; height: auto; border-radius: 4px;">
+                    </div>
+                    <p style="font-size: 0.9rem; color: #837299; text-align: center; font-style: italic; margin-bottom: 25px;">
+                        Meu apontador 'Living Dead Dolls' da personagem Sadie.
+                    </p>
+
+                    <p style="margin-bottom: 20px;">
+                        Este é o meu apontador de lápis favorito. É a cabeça de uma boneca e você enfia o lápis no olho dela para apontar. Tem um pequeno botão na parte de trás do pescoço que empurra as aparas (raspas) para fora da boca!
+                    </p>
+
+                    <p style="margin-bottom: 0;">
+                        Infelizmente, não é muito prático e só corta na ponta cônica padrão :(
+                    </p>
+                </div>
+
+                <h2 id="lapis-curtos" style="font-size: 1.6rem; color: #000000; margin: 50px 0 20px 0; padding-bottom: 10px; border-bottom: 1px solid #e9e3f3;">Desenhando com lápis curtos</h2>
+
+                <div style="margin-bottom: 25px; text-align: center;">
+                    <img src="img/lapis-curto-mao.gif" alt="Mão segurando um lápis bem curto para desenhar" style="max-width: 200px; height: auto; border-radius: 4px;">
+                </div>
+
+                <p style="margin-bottom: 20px;">
+                    A maioria das pessoas joga fora os seus lápis quando eles ficam muito curtos, mas eu acho que eles são mais fáceis de usar.
+                </p>
+
+                <p style="margin-bottom: 15px;">Ao desenhar, eu seguro o meu lápis de duas maneiras diferentes:</p>
+
+                <ul style="list-style: none; margin-bottom: 25px; padding-left: 10px;">
+                    <li style="margin-bottom: 8px;">• <strong>Pela lateral:</strong> para linhas suaves.</li>
+                    <li style="margin-bottom: 8px;">• <strong>Pela ponta:</strong> para linhas finas mais escuras.</li>
+                </ul>
+
+                <p style="margin-bottom: 20px;">
+                    Estou constantemente alternando entre essas duas posições enquanto desenho, e a minha mão fica no caminho se eu estiver usando um lápis longo. Com um lápis curto, consigo mudar de forma fluida e rápida da lateral para a ponta, e vice-versa, sem restrições. É uma coisa fantástica!
+                </p>
+
+                <p style="margin-bottom: 20px;">
+                    Acho os lápis mais curtos bem melhores, tanto que comecei a cortar meus lápis novos ao meio logo após comprá-los. Você ganha dois pelo preço de um dessa forma!
+                </p>
+
+                <p style="margin-bottom: 0; font-weight: 600; color: #6d28d9; font-family: monospace;">
+                    // Um conselho: após o corte, certifique-se de anotar a graduação da dureza nas extremidades; caso contrário, você vai acabar com um monte de lápis de graduação misteriosa!
+                </p>
+
+<div style="background: #ffffff; border: 1px solid #e9e3f3; border-top: 4px solid #bc61f5; border-radius: 4px; padding: 35px; margin-top: 60px; box-shadow: 0 4px 20px rgba(109, 40, 217, 0.01);">
+                    
+                    <div style="font-family: monospace; font-size: 0.8rem; color: #6d28d9; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">
+                        // Fonte & Autoria Original
+                    </div>
+                    
+                    <p style="font-size: 1.05rem; color: #1a1126; margin-bottom: 15px; font-weight: 600;">
+                        Este artigo é uma tradução livre e integrada do conteúdo original publicado por Matthew James Taylor.
+                    </p>
+                    
+                    <p style="font-size: 0.95rem; color: #4a4059; margin-bottom: 25px; text-align: justify;">
+                        Matthew James Taylor é um artista, ilustrador e designer australiano, amplamente conhecido por compartilhar técnicas práticas de desenho de modelo vivo, ilustrações em aquarela e arte vetorial em seu blog pessoal, além de criar recursos e ferramentas utilitárias para criadores independentes.
+                    </p>
+
+                    <div class="author-socials" style="display: flex; gap: 12px; flex-wrap: wrap;">
+                        <style>
+                            .author-socials a {
+                                font-family: monospace;
+                                color: #6d28d9;
+                                text-decoration: none;
+                                font-size: 0.8rem;
+                                font-weight: 700;
+                                border: 1px solid #e9e3f3;
+                                padding: 6px 12px;
+                                border-radius: 4px;
+                                background: #fdfcff;
+                                transition: all 0.2s;
+                                display: inline-flex;
+                                align-items: center;
+                                gap: 6px;
+                            }
+                            .author-socials a:hover {
+                                border-color: #bc61f5;
+                                background: #f1e9fa;
+                                color: #1a1126;
+                            }
+                            .author-socials svg {
+                                width: 14px;
+                                height: 14px;
+                                fill: currentColor;
+                            }
+                        </style>
+
+                        <a href="https://matthewjamestaylor.com/sharpening-pencils" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                            // artigo original
+                        </a>
+
+                        <a href="https://x.com/mattjamestaylor" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                            // x
+                        </a>
+
+                        <a href="https://www.instagram.com/hyperogga/" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            // instagram
+                        </a>
+                    </div>
+                </div>
+            </main>
 
             <aside class="sidebar">
-                
-                <a href="#" class="side-card">
-                    <div class="side-card-img">[Imagem]</div>
-                    <div class="side-card-content">
-                        <h4>[Título]</h4>
-                        <p>(Exemplos, Dicas e Técnicas)</p>
-                    </div>
-                </a>
-
-            </aside>
+                </aside>
         </div>
+
+        <footer style="margin-top: 100px; border-top: 2px solid #e9e3f3; padding-top: 30px; display: flex; justify-content: space-between; font-size: 0.8rem; color: #837299;">
+            <p>muniterra &copy; 2026 — Hospedagem via GitHub Pages.</p>
+            <p style="font-family: monospace; background: #ffffff; padding: 2px 6px; border: 1px solid #e9e3f3; border-radius: 4px; color: #6d28d9;">Estrutura de Diretórios // Gemini</p>
+        </footer>
 
     </div>
 
